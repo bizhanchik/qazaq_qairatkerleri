@@ -35,7 +35,6 @@ const OnlineClassesScreen: React.FC = () => {
         <Text style={styles.title}>Онлайн сабақтар</Text>
         <Text style={styles.desc}>Төмендегі бейнелерді көріп, олар бойынша тесттен өте аласыз.</Text>
 
-        {/* Видео 1 - Әуезов */}
         <YouTubeVideo videoId="0AFuG6RkfSI" />
         {completedTests.auezov ? (
           <View style={styles.completedBanner}>
@@ -47,7 +46,6 @@ const OnlineClassesScreen: React.FC = () => {
           </TouchableOpacity>
         )}
 
-        {/* Видео 2 - Алаш Орда */}
         <YouTubeVideo videoId="3fcFrjkiVmM" />
         {completedTests.alashorda ? (
           <View style={styles.completedBanner}>
@@ -59,7 +57,6 @@ const OnlineClassesScreen: React.FC = () => {
           </TouchableOpacity>
         )}
 
-        {/* Видео 3 - Ахмет */}
         <YouTubeVideo videoId="S1YBXpJxi7E" />
         {completedTests.baitursynov ? (
           <View style={styles.completedBanner}>

@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const akhmetImage = require('../assets/akhmettt.png');
 const auezovImage = require('../assets/auezov.png');
-const alikhanImage = require('../assets/alinnna.png');
+const alikhanImage = require('../assets/alikhan.png');
 
 const HomeScreen: React.FC = () => {
   const navigation = useNavigation<any>();
