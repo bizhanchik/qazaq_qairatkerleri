@@ -1,18 +1,11 @@
-import React, { useEffect, useState } from 'react';
+// screens/ResultsScreen.tsx
+import React from 'react';
 import { View, Text, StyleSheet, Alert, Platform, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useScore } from '../context/ScoreContext';
 
 const ResultsScreen: React.FC = () => {
-  const [score, setScore] = useState<number | null>(null);
-
-  const loadScore = async () => {
-    try {
-      const stored = await AsyncStorage.getItem('total_score');
-      setScore(stored ? parseInt(stored, 10) : 0);
-    } catch (error) {
-      Alert.alert('Қате', 'Деректерді жүктеу мүмкін болмады');
-    }
-  };
+  const { score, setScore, reloadScore } = useScore();
 
   const clearAll = async () => {
     try {
@@ -29,10 +22,6 @@ const ResultsScreen: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    loadScore();
-  }, []);
-
   return (
     <View style={styles.container}>
       <Text style={styles.title}>📊 Жалпы нәтижелер</Text>
@@ -40,7 +29,7 @@ const ResultsScreen: React.FC = () => {
         Сіздің жалпы жинаған балыңыз: <Text style={styles.scoreNumber}>{score ?? '...'}</Text> / 300
       </Text>
 
-      <TouchableOpacity style={styles.refreshButton} onPress={loadScore}>
+      <TouchableOpacity style={styles.refreshButton} onPress={reloadScore}>
         <Text style={styles.buttonText}>🔄 Балды жаңарту</Text>
       </TouchableOpacity>
 

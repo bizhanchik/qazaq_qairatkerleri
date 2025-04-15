@@ -18,9 +18,9 @@ export default function HomeNavigator() {
       <Stack.Screen name="Ахмет Байтұрсынұлы" component={AkhmetScreen} />
       <Stack.Screen name="Мұхтар Әуезов" component={AuezovScreen} />
       <Stack.Screen name="Әлихан Бөкейхан" component={AlikhanScreen} />
-      <Stack.Screen name="AuezovFirstTest" component={AuezovFirstTestScreen} />
-      <Stack.Screen name="AlashOrdaFirstTest" component={AlashOrdaFirstTestScreen} />
-      <Stack.Screen name="BaitursynovFirstTest" component={BaitursynovFirstTestScreen} />
+      <Stack.Screen name="Әуезов Тест" component={AuezovFirstTestScreen} />
+      <Stack.Screen name="Алаш Орда Тест" component={AlashOrdaFirstTestScreen} />
+      <Stack.Screen name="Байтұрсынұлы Тест" component={BaitursynovFirstTestScreen} />
     </Stack.Navigator>
   );
 }

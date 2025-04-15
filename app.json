@@ -4,11 +4,11 @@
     "slug": "qazaq_qairatkerleri",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/yurta-icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/yurta-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,12 +17,19 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/yurta-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bizhan.qazaq_qairatkerleri"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/yurta-icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8a24c70d-cbbc-4140-91e3-938df9b44d01"
+      }
+    },
+    "owner": "bizhan"
   }
 }
