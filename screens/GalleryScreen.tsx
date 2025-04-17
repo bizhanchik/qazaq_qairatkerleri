@@ -1,4 +1,3 @@
-// screens/GalleryScreen.tsx
 import React, { useState } from 'react';
 import { ScrollView, StyleSheet, Text, View, TouchableOpacity, Modal, Platform, Linking } from 'react-native';
 
