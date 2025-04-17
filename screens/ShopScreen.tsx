@@ -1,4 +1,3 @@
-// screens/ShopScreen.tsx
 import React from 'react';
 import { View, Text, StyleSheet, Image, FlatList, TouchableOpacity, Alert, Platform, Linking } from 'react-native';
 import { useScore } from '../context/ScoreContext';
